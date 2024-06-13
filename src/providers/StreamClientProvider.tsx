@@ -29,10 +29,12 @@ export const StreamVideoProvider = ({children}: {children: React.ReactNode}) => 
       });
 
       setVideoClient(client);
+      console.log("Inside Effect");
 
     },[user, isLoaded]);
-
+     console.log("Before");
     if(!videoClient) return <Loader />
+   console.log("After");
 
   return (
     <StreamVideo client={videoClient}>
