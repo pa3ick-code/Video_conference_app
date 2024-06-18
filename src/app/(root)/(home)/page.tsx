@@ -1,5 +1,5 @@
 import { BackgroundBeams, MeetingTypeLists} from "@/src/components";
-import { Time, Today }from "../lib/utils";
+import { Time, Today }from "../../../lib/utils";
 import { currentUser } from "@clerk/nextjs/server";
 
 export default async function Home() {

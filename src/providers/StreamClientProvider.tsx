@@ -10,7 +10,7 @@ import { useUser } from '@clerk/nextjs';
 
 const apiKey = process.env.NEXT_PUBLIC_STREAM_API_KEY;
 
-export const StreamVideoProvider = ({children}: {children: React.ReactNode}) => {
+export default function StreamVideoProvider({children}: {children: React.ReactNode}){
     const [videoClient, setVideoClient] = useState<StreamVideoClient>();
     const {user, isLoaded} = useUser();
 
@@ -32,9 +32,7 @@ export const StreamVideoProvider = ({children}: {children: React.ReactNode}) => 
       console.log("Inside Effect");
 
     },[user, isLoaded]);
-     console.log("Before");
     if(!videoClient) return <Loader />
-   console.log("After");
 
   return (
     <StreamVideo client={videoClient}>
