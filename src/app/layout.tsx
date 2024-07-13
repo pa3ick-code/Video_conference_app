@@ -9,7 +9,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Video call",
+  title: "Video conference",
   description: "Connecting people together",
 };
 

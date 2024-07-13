@@ -24,7 +24,7 @@ export default async function Home() {
         </div>
         <MeetingTypeLists />
       </div>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
     </section>
   );
 }
